@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi lo fa?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .card {
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      cursor: pointer;
+      text-align: center;
+      width: 80%;
+      max-width: 400px;
+      font-size: 24px; /* Dimensione del testo nella carta */
+    }
+  </style>
+</head>
+<body>
+  <div class="card" onclick="showRandomPhrase()">Clicca qui per vedere una frase casuale</div>
+
+  <script>
+    const phrases = [
+      "Chi è più probabile che si perda in una nuova città?",
+      "Chi è più probabile che inizi a ballare in mezzo alla strada?",
+      "Chi è più probabile che si dimentichi di pagare una bolletta?",
+      "Chi è più probabile che racconti una barzelletta imbarazzante?",
+      "Chi è più probabile che cucini una cena disastrosa?",
+      "Chi è più probabile che guardi un'intera serie TV in una notte?",
+      "Chi è più probabile che si addormenti durante un film?",
+      "Chi è più probabile che faccia un viaggio improvvisato?",
+      "Chi è più probabile che scriva una canzone?",
+      "Chi è più probabile che faccia una figura imbarazzante davanti a molte persone?",
+      "Chi è più probabile che diventi famoso su Internet?",
+      "Chi è più probabile che faccia bungee jumping?",
+      "Chi è più probabile che dimentichi dove ha parcheggiato l'auto?",
+      "Chi è più probabile che arrivi in ritardo a un appuntamento importante?",
+      "Chi è più probabile che faccia un regalo strano o inappropriato?",
+      "Chi è più probabile che sbagli numero di telefono mentre chiama qualcuno?",
+      "Chi è più probabile che rovini una sorpresa?",
+      "Chi è più probabile che si iscriva a un corso insolito?",
+      "Chi è più probabile che cambi lavoro più spesso?",
+      "Chi è più probabile che faccia una maratona?",
+      "Chi sarebbe più facile convincere a rapire una persona?",
+      "Quale persona sarebbe in grado di sopravvivere senza di me?",
+      "Quale tra le persone presenti potresti convincere a farsi un tatuaggio con il logo di WhatsApp?",
+      "Chi farebbe meno domande se dicessi che stai per avere un figlio?",
+      "Quale persona sarebbe più propensa ad uscire di casa in mutande d'inverno?",
+      "Miglior persona per fare una spedizione di droga dalla Colombia all'Italia?",
+      "Quale persona pensi sia in grado di riuscire a farsi una foto con il papa?",
+      "Chi tra i presenti avrebbe più coraggio ad andare in un centro commerciale e far finta di lavorare lì?",
+      "Se dovessi vedere un tizio losco chi potrebbe conoscerlo?",
+      "Chi pensi che sarebbe in grado di ripulire dei soldi sporchi?",
+      "Chi tra queste persone preferirebbe rubare anziché andare a lavorare?",
+      "Se dovessi scegliere una persona per aiutarti a scappare di prigione chi sarebbe?",
+      "Se su una montagna c'è un gallo e depone un uovo e chiedessi da che parte scenderebbe l'uovo chi risponderebbe destra?",
+      "Quale persona piuttosto che andare a votare si farebbe fare un taglio nella gamba senza pensarci troppo?",
+      "Chi in questa stanza é più probabile che abbia il numero di telefono di uno spacciatore?",
+      "Quale persona presente picchierebbe qualcuno per difendere un suo amico?",
+      "Chi tra i presenti sarebbe più facile da coinvolgere in una attività illegale?",
+      "Chi tra questi presenti farebbe sport estremi?",
+      "Chi andrebbe al mare col giubbotto d'estate?",
+      "Chi secondo te potrebbe essere un latitante sotto copertura?",
+      "La persona più crazy del gruppo?",
+      "Chi tra i presenti se avesse fame si mangerebbe un gatto?",
+      "Chi chiameresti se dovessi fare una rapina?",
+      "La persona con più voglia di studiare della stanza chi è?",
+      "Chi è più probabile che parli di sesso a tavola?",
+      "Chi è più probabile che abbia un sex toy?",
+      "Chi è più probabile che abbia fatto sesso in un luogo pubblico?",
+      "Chi è più probabile che mandi messaggi hot?",
+      "Chi è più probabile che guardi film erotici?",
+      "Chi è più probabile che abbia avuto un'avventura di una notte?",
+      "Chi è più probabile che abbia fatto sexting?",
+      "Chi è più probabile che parli sporco durante il sesso?",
+      "Chi è più probabile che abbia fatto sesso in auto?",
+      "Chi è più probabile che provi una pratica BDSM?",
+      "Chi è più probabile che abbia avuto un ménage à trois?",
+      "Chi è più probabile che utilizzi app di incontri per sesso occasionale?",
+      "Chi è più probabile che abbia un conto su un sito di incontri?",
+      "Chi è più probabile che parli apertamente delle proprie fantasie sessuali?",
+      "Chi è più probabile che provi il ruolo del dominatore/dominata?",
+      "Chi è più probabile che mandi foto provocanti?",
+      "Chi è più probabile che guardi porno?",
+      "Chi è più probabile che abbia una lista dei desideri sessuali?",
+      "Chi è più probabile che faccia sesso al primo appuntamento?",
+      "Chi è più probabile che abbia fatto sesso telefonico?"
+    ];
+
+    function showRandomPhrase() {
+      const randomIndex = Math.floor(Math.random() * phrases.length);
+      const card = document.querySelector('.card');
+      card.textContent = phrases[randomIndex];
+    }
+  </script>
+</body>
+</html>
